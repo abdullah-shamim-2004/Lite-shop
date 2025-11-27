@@ -1,0 +1,221 @@
+[
+  {
+    "name": "Samsung Galaxy A54",
+    "category": "Mobile",
+    "brand": "Samsung",
+    "price": 34999,
+    "rating": 4.5,
+    "stock": 20,
+    "image": "https://i.ibb.co.com/cSz6dQkG/i-Phone-16-Plus-16-Pink-9850.webp",
+    "description": "A mid-range smartphone with Super AMOLED display and long battery life."
+  },
+  {
+    "id": 2,
+    "name": "iPhone 14 Pro",
+    "category": "Mobile",
+    "brand": "Apple",
+    "price": 134999,
+    "rating": 4.8,
+    "stock": 15,
+    "image": "https://i.ibb.co.com/cSz6dQkG/i-Phone-16-Plus-16-Pink-9850.webp",
+    "description": "Flagship iPhone with A16 Bionic chip and superb camera performance."
+  },
+  {
+    "id": 3,
+    "name": "Redmi Note 12",
+    "category": "Mobile",
+    "brand": "Xiaomi",
+    "price": 19999,
+    "rating": 4.4,
+    "stock": 30,
+    "image": "https://i.ibb.co.com/cSz6dQkG/i-Phone-16-Plus-16-Pink-9850.webp",
+    "description": "Affordable smartphone with a large display and 5000mAh battery."
+  },
+  {
+    "id": 4,
+    "name": "Sony WH-1000XM4",
+    "category": "Headphone",
+    "brand": "Sony",
+    "price": 32999,
+    "rating": 4.7,
+    "stock": 12,
+    "image": "https://i.ibb.co.com/cSz6dQkG/i-Phone-16-Plus-16-Pink-9850.webp",
+    "description": "Premium noise-cancelling over-ear headphones."
+  },
+  {
+    "id": 5,
+    "name": "Logitech G502 Hero",
+    "category": "Mouse",
+    "brand": "Logitech",
+    "price": 4999,
+    "rating": 4.6,
+    "stock": 40,
+    "image": "https://i.ibb.co.com/cSz6dQkG/i-Phone-16-Plus-16-Pink-9850.webp",
+    "description": "High-performance gaming mouse with adjustable DPI."
+  },
+  {
+    "id": 6,
+    "name": "Dell Inspiron 15",
+    "category": "Laptop",
+    "brand": "Dell",
+    "price": 68999,
+    "rating": 4.3,
+    "stock": 18,
+    "image": "https://i.ibb.co/dell-inspiron15.jpg",
+    "description": "Reliable everyday laptop with Intel Core processor."
+  },
+  {
+    "id": 7,
+    "name": "Acer Nitro 5",
+    "category": "Laptop",
+    "brand": "Acer",
+    "price": 89999,
+    "rating": 4.5,
+    "stock": 10,
+    "image": "https://i.ibb.co/acer-nitro5.jpg",
+    "description": "Powerful gaming laptop with RTX graphics."
+  },
+  {
+    "id": 8,
+    "name": "Apple MacBook Air M1",
+    "category": "Laptop",
+    "brand": "Apple",
+    "price": 104999,
+    "rating": 4.9,
+    "stock": 14,
+    "image": "https://i.ibb.co/macbook-air-m1.jpg",
+    "description": "Ultra-light laptop with M1 chip and excellent battery life."
+  },
+  {
+    "id": 9,
+    "name": "Samsung 32\" Smart TV",
+    "category": "Television",
+    "brand": "Samsung",
+    "price": 27999,
+    "rating": 4.4,
+    "stock": 25,
+    "image": "https://i.ibb.co/samsung-smarttv32.jpg",
+    "description": "Smart TV with HDR and built-in streaming apps."
+  },
+  {
+    "id": 10,
+    "name": "LG 43\" 4K UHD TV",
+    "category": "Television",
+    "brand": "LG",
+    "price": 44999,
+    "rating": 4.6,
+    "stock": 13,
+    "image": "https://i.ibb.co/lg-4k-tv43.jpg",
+    "description": "Ultra HD smart TV with crisp picture quality."
+  },
+  {
+    "id": 11,
+    "name": "Canon EOS 250D",
+    "category": "Camera",
+    "brand": "Canon",
+    "price": 55999,
+    "rating": 4.5,
+    "stock": 9,
+    "image": "https://i.ibb.co/canon-250d.jpg",
+    "description": "Compact DSLR with 4K video recording."
+  },
+  {
+    "id": 12,
+    "name": "GoPro Hero 11",
+    "category": "Camera",
+    "brand": "GoPro",
+    "price": 39999,
+    "rating": 4.7,
+    "stock": 11,
+    "image": "https://i.ibb.co/gopro-hero11.jpg",
+    "description": "Action camera ideal for travel and sports."
+  },
+  {
+    "id": 13,
+    "name": "Mi Power Bank 20000mAh",
+    "category": "Power Bank",
+    "brand": "Xiaomi",
+    "price": 2499,
+    "rating": 4.6,
+    "stock": 40,
+    "image": "https://i.ibb.co/mi-powerbank-20000.jpg",
+    "description": "High capacity power bank with fast charging."
+  },
+  {
+    "id": 14,
+    "name": "Anker Soundcore Speaker",
+    "category": "Speaker",
+    "brand": "Anker",
+    "price": 3499,
+    "rating": 4.6,
+    "stock": 35,
+    "image": "https://i.ibb.co/anker-soundcore.jpg",
+    "description": "Portable Bluetooth speaker with long battery life."
+  },
+  {
+    "id": 15,
+    "name": "Sony PlayStation 5",
+    "category": "Console",
+    "brand": "Sony",
+    "price": 79999,
+    "rating": 4.9,
+    "stock": 5,
+    "image": "https://i.ibb.co/ps5.jpg",
+    "description": "Next-gen gaming console with ultra-fast SSD."
+  },
+  {
+    "id": 16,
+    "name": "Xbox Series X",
+    "category": "Console",
+    "brand": "Microsoft",
+    "price": 74999,
+    "rating": 4.8,
+    "stock": 7,
+    "image": "https://i.ibb.co/xbox-seriesx.jpg",
+    "description": "Powerful gaming console with 4K gaming support."
+  },
+  {
+    "id": 17,
+    "name": "Apple AirPods Pro 2",
+    "category": "Earbuds",
+    "brand": "Apple",
+    "price": 28999,
+    "rating": 4.8,
+    "stock": 20,
+    "image": "https://i.ibb.co/airpods-pro2.jpg",
+    "description": "Active noise-cancelling premium earbuds."
+  },
+  {
+    "id": 18,
+    "name": "Samsung Galaxy Buds FE",
+    "category": "Earbuds",
+    "brand": "Samsung",
+    "price": 10999,
+    "rating": 4.4,
+    "stock": 18,
+    "image": "https://i.ibb.co/galaxy-budsfe.jpg",
+    "description": "Affordable earbuds with rich sound quality."
+  },
+  {
+    "id": 19,
+    "name": "JBL Charge 5",
+    "category": "Speaker",
+    "brand": "JBL",
+    "price": 16999,
+    "rating": 4.7,
+    "stock": 16,
+    "image": "https://i.ibb.co/jbl-charge5.jpg",
+    "description": "Powerful waterproof portable speaker."
+  },
+  {
+    "id": 20,
+    "name": "TP-Link Archer C6 Router",
+    "category": "Router",
+    "brand": "TP-Link",
+    "price": 2999,
+    "rating": 4.5,
+    "stock": 28,
+    "image": "https://i.ibb.co/tplink-c6.jpg",
+    "description": "High-speed dual-band WiFi router."
+  }
+]
