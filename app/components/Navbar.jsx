@@ -5,9 +5,20 @@ import React from "react";
 import { FaUserCircle, FaUtensils } from "react-icons/fa";
 import { useAuth } from "../context/AuthContext";
 import Image from "next/image";
+import { toast, ToastContainer } from "react-toastify";
 
 const Navbar = () => {
-  const { user } = useAuth();
+  const { user, UserSignOut } = useAuth();
+  const handleSignOut = () => {
+    UserSignOut()
+      .then(() => {
+        toast.success("You signed out successfully!");
+      })
+      .catch((error) => {
+        toast.error(error.message);
+      });
+  };
+
   const links = (
     <>
       <li>
@@ -17,12 +28,16 @@ const Navbar = () => {
         <Link href="/products">Products</Link>
       </li>
       <li>
+        <Link href="/add-product">Add Products</Link>
+      </li>
+      <li>
         <Link href="/about">About</Link>
       </li>
     </>
   );
   return (
     <div className="navbar bg-base-100 shadow-sm">
+      <ToastContainer />
       <div className="navbar-start">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -64,10 +79,10 @@ const Navbar = () => {
               >
                 {user.photoURL ? (
                   <Image
-                    src={user.photoURL || "/default-user.png"} 
+                    src={user.photoURL || "/default-user.png"}
                     alt={user.displayName || "User"}
-                    width={40} 
-                    height={40} 
+                    width={40}
+                    height={40}
                     className="rounded-full border cursor-pointer"
                   />
                 ) : (
@@ -81,17 +96,17 @@ const Navbar = () => {
               className="dropdown-content menu bg-base-100 rounded-box z-10 w-52 p-2 shadow-sm"
             >
               <li>
-                <Link href="/">Add Products</Link>
+                <Link href="/add-product">Add Products</Link>
               </li>
               <li>
-                <Link href="/">My Products</Link>
+                <Link href="/my-products">My Products</Link>
               </li>
               {/* <li>
                 <Link href="/">My Favorites</Link>
               </li> */}
               <li>
                 <button
-                  // onClick={handleSignOut}
+                  onClick={handleSignOut}
                   className="btn btn-outline btn-primary btn-sm"
                 >
                   Logout

@@ -4,6 +4,8 @@ import React from "react";
 import { useForm } from "react-hook-form";
 import { useAuth } from "../../context/AuthContext";
 import { data } from "autoprefixer";
+import toast from "daisyui/components/toast";
+import { ToastContainer } from "react-toastify";
 
 const Register = () => {
   const { createUser, googleSignIn } = useAuth();
@@ -24,7 +26,7 @@ const Register = () => {
       });
   };
   // Register or login with google
-  const handleSignInWithGoogle = (data) => {
+  const handleSignInWithGoogle = () => {
     googleSignIn
       .then((res) => {
         console.log(res.user);
@@ -36,6 +38,7 @@ const Register = () => {
 
   return (
     <div className="flex justify-center items-center min-h-screen flex-col">
+      <ToastContainer />
       <div className="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
         <div className="card-body ">
           <h2 className="text-2xl font-semibold text-center py-4">

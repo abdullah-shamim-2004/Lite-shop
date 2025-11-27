@@ -1,8 +1,27 @@
+// next.config.js
+
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  reactCompiler: true,
+  // React Compiler কনফিগারেশন
+  reactCompiler: true, 
+
+  // Image Optimization কনফিগারেশন
   images: {
-    domains: ["i.ibb.co"],
+    // এখানে আপনার অনুমোদিত ডোমেইনগুলো যুক্ত করুন
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'i.ibb.co.com', // আপনার হোস্টনেম
+        port: '', // সাধারণত ইমেজ হোস্টের জন্য পোর্ট দরকার হয় না
+        pathname: '/**', // এই ডোমেইনের যেকোনো পাথ থেকে ইমেজ লোড করার অনুমতি
+      },
+     
+    ],
+  },
+  
+  
+  experimental: {
+    serverActions: true,
   },
 };
 

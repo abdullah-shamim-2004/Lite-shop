@@ -10,7 +10,6 @@
     "description": "A mid-range smartphone with Super AMOLED display and long battery life."
   },
   {
-    "id": 2,
     "name": "iPhone 14 Pro",
     "category": "Mobile",
     "brand": "Apple",
@@ -21,7 +20,6 @@
     "description": "Flagship iPhone with A16 Bionic chip and superb camera performance."
   },
   {
-    "id": 3,
     "name": "Redmi Note 12",
     "category": "Mobile",
     "brand": "Xiaomi",
@@ -32,7 +30,6 @@
     "description": "Affordable smartphone with a large display and 5000mAh battery."
   },
   {
-    "id": 4,
     "name": "Sony WH-1000XM4",
     "category": "Headphone",
     "brand": "Sony",
@@ -43,7 +40,6 @@
     "description": "Premium noise-cancelling over-ear headphones."
   },
   {
-    "id": 5,
     "name": "Logitech G502 Hero",
     "category": "Mouse",
     "brand": "Logitech",
@@ -54,7 +50,6 @@
     "description": "High-performance gaming mouse with adjustable DPI."
   },
   {
-    "id": 6,
     "name": "Dell Inspiron 15",
     "category": "Laptop",
     "brand": "Dell",
@@ -65,7 +60,6 @@
     "description": "Reliable everyday laptop with Intel Core processor."
   },
   {
-    "id": 7,
     "name": "Acer Nitro 5",
     "category": "Laptop",
     "brand": "Acer",
@@ -76,7 +70,6 @@
     "description": "Powerful gaming laptop with RTX graphics."
   },
   {
-    "id": 8,
     "name": "Apple MacBook Air M1",
     "category": "Laptop",
     "brand": "Apple",
