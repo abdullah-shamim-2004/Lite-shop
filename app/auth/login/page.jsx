@@ -6,9 +6,9 @@ import React from "react";
 import { toast, ToastContainer } from "react-toastify";
 
 const login = () => {
+  const { UserSignIn, googleSignIn } = useAuth();
   //component for handle login
   const handleLogIn = (event) => {
-    const { UserSignIn, googleSignIn } = useAuth();
     event.preventDefault();
     const email = event.target.email.value;
     const password = event.target.password.value;

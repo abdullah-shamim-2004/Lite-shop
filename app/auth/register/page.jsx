@@ -28,7 +28,7 @@ const Register = () => {
   };
   // Register or login with google
   const handleSignInWithGoogle = () => {
-    googleSignIn
+    googleSignIn()
       .then((res) => {
         console.log(res.user);
       })

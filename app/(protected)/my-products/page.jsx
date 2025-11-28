@@ -7,6 +7,8 @@ import { useEffect, useState } from "react";
 import Swal from "sweetalert2";
 import { useAuth } from "@/app/context/AuthContext";
 import Loader from "@/app/components/Loader";
+// import toast from "daisyui/components/toast";
+import { toast, ToastContainer } from "react-toastify";
 
 const myproducts = () => {
   const { user, loading } = useAuth();
@@ -23,6 +25,12 @@ const myproducts = () => {
   if (loading) {
     return <Loader></Loader>;
   }
+
+  const handleEdit = () => {
+    toast(
+      "sorry! developer do not impliment edit function. Developer will do this when he will find off time."
+    );
+  };
   // Delete Function
   const handleDelete = async (id) => {
     const confirm = await Swal.fire({
@@ -59,6 +67,7 @@ const myproducts = () => {
   return (
     <ProtectedRoute>
       <div className="p-6 max-[576px]:p-1.5 max-[576px]:w-fit">
+        <ToastContainer/>
         <h2 className="text-2xl font-bold mb-4">
           My Products ({products.length})
         </h2>
@@ -110,13 +119,13 @@ const myproducts = () => {
                     <td>{new Date(product.createdAt).toLocaleDateString()}</td>
 
                     <td className="flex gap-2">
-                      <Link
-                        href="/"
-                        //   href={`/edit-product/${product._id}`}
+                      <button
+                        // href="/"
+                        onClick={() => handleEdit()}
                         className="btn btn-sm btn-outline btn-info"
                       >
                         Edit
-                      </Link>
+                      </button>
                       <button
                         onClick={() => handleDelete(product._id)}
                         className="btn btn-sm btn-outline btn-error"
