@@ -6,10 +6,13 @@ import Link from "next/link";
 import { useEffect, useState } from "react";
 import Swal from "sweetalert2";
 import { useAuth } from "@/app/context/AuthContext";
+import Loader from "@/app/components/Loader";
 
 const myproducts = () => {
-  const { user } = useAuth();
+  const { user, loading } = useAuth();
+
   const [products, setProducts] = useState([]);
+
   useEffect(() => {
     if (!user?.email) return;
     fetch(`https://lite-shop-server.vercel.app/products?email=${user.email}`)
@@ -17,6 +20,9 @@ const myproducts = () => {
       .then((data) => setProducts(data))
       .catch((err) => console.error(err));
   }, [user]);
+  if (loading) {
+    return <Loader></Loader>;
+  }
   // Delete Function
   const handleDelete = async (id) => {
     const confirm = await Swal.fire({
@@ -92,8 +98,8 @@ const myproducts = () => {
                       <Image
                         src={product.image}
                         alt={product.name}
-                        width={400} // set appropriate width
-                        height={300} // set appropriate height
+                        width={200} // set appropriate width
+                        height={200} // set appropriate height
                         className="rounded-md mb-2 object-cover"
                       />
                     </td>
@@ -105,6 +111,7 @@ const myproducts = () => {
 
                     <td className="flex gap-2">
                       <Link
+                        href="/"
                         //   href={`/edit-product/${product._id}`}
                         className="btn btn-sm btn-outline btn-info"
                       >

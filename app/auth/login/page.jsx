@@ -2,7 +2,7 @@
 import { useAuth } from "@/app/context/AuthContext";
 import Link from "next/link";
 import React from "react";
-import { FaEye, FaEyeSlash } from "react-icons/fa";
+// import { FaEye, FaEyeSlash } from "react-icons/fa";
 import { toast, ToastContainer } from "react-toastify";
 
 const login = () => {
@@ -52,7 +52,7 @@ const login = () => {
       .then(() => {
         // Signed in
         toast("Login successfully with Gmail");
-        Navigate(`${location.state ? location.state : "/"}`);
+        // Navigate(`${location.state ? location.state : "/"}`);
       })
       .catch((error) => {
         const errorCode = error.code;

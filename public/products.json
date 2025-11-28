@@ -1,35 +1,5 @@
 [
   {
-    "name": "Samsung Galaxy A54",
-    "category": "Mobile",
-    "brand": "Samsung",
-    "price": 34999,
-    "rating": 4.5,
-    "stock": 20,
-    "image": "https://i.ibb.co.com/cSz6dQkG/i-Phone-16-Plus-16-Pink-9850.webp",
-    "description": "A mid-range smartphone with Super AMOLED display and long battery life."
-  },
-  {
-    "name": "iPhone 14 Pro",
-    "category": "Mobile",
-    "brand": "Apple",
-    "price": 134999,
-    "rating": 4.8,
-    "stock": 15,
-    "image": "https://i.ibb.co.com/cSz6dQkG/i-Phone-16-Plus-16-Pink-9850.webp",
-    "description": "Flagship iPhone with A16 Bionic chip and superb camera performance."
-  },
-  {
-    "name": "Redmi Note 12",
-    "category": "Mobile",
-    "brand": "Xiaomi",
-    "price": 19999,
-    "rating": 4.4,
-    "stock": 30,
-    "image": "https://i.ibb.co.com/cSz6dQkG/i-Phone-16-Plus-16-Pink-9850.webp",
-    "description": "Affordable smartphone with a large display and 5000mAh battery."
-  },
-  {
     "name": "Sony WH-1000XM4",
     "category": "Headphone",
     "brand": "Sony",
@@ -46,7 +16,7 @@
     "price": 4999,
     "rating": 4.6,
     "stock": 40,
-    "image": "https://i.ibb.co.com/cSz6dQkG/i-Phone-16-Plus-16-Pink-9850.webp",
+    "image": "https://i.ibb.co.com/Z6PrqyLY/61mp-MH5-Tzk-L-AC-SL1500.jpg",
     "description": "High-performance gaming mouse with adjustable DPI."
   },
   {
@@ -56,7 +26,7 @@
     "price": 68999,
     "rating": 4.3,
     "stock": 18,
-    "image": "https://i.ibb.co/dell-inspiron15.jpg",
+    "image": "https://i.ibb.co.com/k2x7k894/3501-05-500x500-500x500.jpg",
     "description": "Reliable everyday laptop with Intel Core processor."
   },
   {
@@ -66,7 +36,7 @@
     "price": 89999,
     "rating": 4.5,
     "stock": 10,
-    "image": "https://i.ibb.co/acer-nitro5.jpg",
+    "image": "https://i.ibb.co.com/k2x7k894/3501-05-500x500-500x500.jpg",
     "description": "Powerful gaming laptop with RTX graphics."
   },
   {
@@ -76,33 +46,30 @@
     "price": 104999,
     "rating": 4.9,
     "stock": 14,
-    "image": "https://i.ibb.co/macbook-air-m1.jpg",
+    "image": "https://i.ibb.co.com/k2x7k894/3501-05-500x500-500x500.jpg",
     "description": "Ultra-light laptop with M1 chip and excellent battery life."
   },
   {
-    "id": 9,
     "name": "Samsung 32\" Smart TV",
     "category": "Television",
     "brand": "Samsung",
     "price": 27999,
     "rating": 4.4,
     "stock": 25,
-    "image": "https://i.ibb.co/samsung-smarttv32.jpg",
+    "image": "https://i.ibb.co.com/VWWwNtCr/1181459-samsung-32-smart-tv-class-hd-h5000f-2025.jpg",
     "description": "Smart TV with HDR and built-in streaming apps."
   },
   {
-    "id": 10,
     "name": "LG 43\" 4K UHD TV",
     "category": "Television",
     "brand": "LG",
     "price": 44999,
     "rating": 4.6,
     "stock": 13,
-    "image": "https://i.ibb.co/lg-4k-tv43.jpg",
+    "image": "https://i.ibb.co.com/VWWwNtCr/1181459-samsung-32-smart-tv-class-hd-h5000f-2025.jpg",
     "description": "Ultra HD smart TV with crisp picture quality."
   },
   {
-    "id": 11,
     "name": "Canon EOS 250D",
     "category": "Camera",
     "brand": "Canon",
@@ -113,7 +80,6 @@
     "description": "Compact DSLR with 4K video recording."
   },
   {
-    "id": 12,
     "name": "GoPro Hero 11",
     "category": "Camera",
     "brand": "GoPro",
@@ -124,7 +90,6 @@
     "description": "Action camera ideal for travel and sports."
   },
   {
-    "id": 13,
     "name": "Mi Power Bank 20000mAh",
     "category": "Power Bank",
     "brand": "Xiaomi",

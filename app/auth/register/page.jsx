@@ -6,6 +6,7 @@ import { useAuth } from "../../context/AuthContext";
 import { data } from "autoprefixer";
 import toast from "daisyui/components/toast";
 import { ToastContainer } from "react-toastify";
+import Link from "next/link";
 
 const Register = () => {
   const { createUser, googleSignIn } = useAuth();
@@ -130,6 +131,16 @@ const Register = () => {
               </svg>
               Login with Google
             </button>
+            <p className="text-md font-semibold text-center my-1.5">
+              Have An Account ?{" "}
+              <Link
+                // state={location?.state}
+                className="text-primary"
+                href="/auth/login"
+              >
+                Login
+              </Link>{" "}
+            </p>
           </div>
         </div>
       </div>

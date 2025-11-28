@@ -2,9 +2,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Navbar from "./components/Navbar";
 import { AuthProvider } from "./context/AuthContext";
-import Bannar from "./components/Bannar";
 import Footer from "./components/Footer";
-// import Footer from "daisyui/components/footer";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -30,7 +28,6 @@ export default function RootLayout({ children }) {
         {" "}
         <AuthProvider>
           <Navbar />
-          {/* <Bannar /> */}
           {children}
           <Footer />
         </AuthProvider>

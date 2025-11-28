@@ -1,13 +1,17 @@
 "use client";
 
+import Loader from "@/app/components/Loader";
 import ProtectedRoute from "@/app/components/ProtectedRoute";
 import { useAuth } from "@/app/context/AuthContext";
 import React from "react";
 import { toast, ToastContainer } from "react-toastify";
 
 const AddProduct = () => {
-  const { user } = useAuth();
+  const { user, loading } = useAuth();
   //   console.log(user);
+  if (loading) {
+    return <Loader></Loader>
+  }
 
   const handleAddProduct = async (e) => {
     e.preventDefault();

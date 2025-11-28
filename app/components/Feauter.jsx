@@ -1,6 +1,7 @@
 "use client";
 import React, { useEffect, useState } from "react";
 import ProductCard from "./ProductCard";
+import Loader from "./Loader";
 
 const Feauter = () => {
   const [products, setProducts] = useState([]);
@@ -20,12 +21,7 @@ const Feauter = () => {
   }, []);
 
   if (loading) {
-    return (
-      <div className="text-center py-10">
-        <span className="loading loading-spinner loading-lg"></span>
-        <p className="mt-3 text-lg font-medium">Loading products...</p>
-      </div>
-    );
+    return <Loader/>
   }
 
   return (
@@ -39,7 +35,7 @@ const Feauter = () => {
         </p>
         <div className="w-24 h-1 bg-amber-400 rounded-full mt-4 mx-auto"></div>
       </div>
-      <div className="mt-3 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2 md:gap-5">
+      <div className="mt-3 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2 md:gap-5">
         {products.map((product) => (
           <ProductCard key={product._id} product={product} />
         ))}

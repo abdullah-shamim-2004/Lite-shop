@@ -18,32 +18,19 @@ const Bannar = () => {
     },
     {
       id: 2,
-      img: "https://i.ibb.co.com/cSz6dQkG/i-Phone-16-Plus-16-Pink-9850.webp",
-      text: "iPhone 14 Pro",
+      img: "https://i.ibb.co.com/k2x7k894/3501-05-500x500-500x500.jpg",
+      text: "Dell Inspiron 15",
       description:
         "  A mid-range smartphone with Super AMOLED display and long battery life.",
     },
     {
       id: 3,
-      img: "https://i.ibb.co.com/cSz6dQkG/i-Phone-16-Plus-16-Pink-9850.webp",
-      text: "iPhone 14 Pro",
+      img: "https://i.ibb.co.com/VWWwNtCr/1181459-samsung-32-smart-tv-class-hd-h5000f-2025.jpg",
+      text: 'Samsung 32" Smart TV',
       description:
         "  A mid-range smartphone with Super AMOLED display and long battery life.",
     },
-    // {
-    //   id: 2,
-    //   img: "https://i.ibb.co.com/cSz6dQkG/i-Phone-16-Plus-16-Pink-9850.webp",
-    //   text: "Healthy Meals for Happy Pets",
-    //   description:
-    //     "  Cozy winter care services for your furry friends — grooming,warm outfits, nutrition tips and more.",
-    // },
-    // {
-    //   id: 3,
-    //   img: "https://i.ibb.co.com/cSz6dQkG/i-Phone-16-Plus-16-Pink-9850.webp",
-    //   text: "Find the Best Care from Our Vets",
-    //   description:
-    //     "  Cozy winter care services for your furry friends — grooming,warm outfits, nutrition tips and more.",
-    // },
+  
   ];
 
   return (
@@ -67,7 +54,7 @@ const Bannar = () => {
                 backgroundImage: `url(${slide.img})`,
               }}
             >
-              <div className="absolute inset-0 blur-sm bg-gradient-to-t from-white/50 to-black/50"></div>
+              <div className="absolute inset-0 blur-sm bg-gradient-to-t from-white/20 to-black/10"></div>
 
               <div className="relative z-10 text-center text-white/90 max-w-2xl px-6">
                 <h1 className="text-3xl md:text-5xl font-bold mb-4">
