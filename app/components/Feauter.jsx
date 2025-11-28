@@ -8,7 +8,7 @@ const Feauter = () => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    fetch("https://lite-shop-server.vercel.app/products?limit=6")
+    fetch("https://lite-shop-server.vercel.app/products?limit=8")
       .then((res) => res.json())
       .then((data) => {
         setProducts(data);
