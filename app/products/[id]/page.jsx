@@ -1,3 +1,4 @@
+import Loader from "@/app/components/Loader";
 import Image from "next/image";
 
 export default async function details({ params }) {
@@ -7,7 +8,7 @@ export default async function details({ params }) {
   const products = await res.json();
   const product = (products.product);
   if (!product) {
-    return <div>loading</div>;
+    return <Loader/>
   }
 
   return (
