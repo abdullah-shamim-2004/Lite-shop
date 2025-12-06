@@ -5,6 +5,7 @@ import { Autoplay, Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
 import Link from "next/link";
+import Image from "next/image";
 // import { Link } from "react-router";
 
 const Bannar = () => {
@@ -30,7 +31,6 @@ const Bannar = () => {
       description:
         "  A mid-range smartphone with Super AMOLED display and long battery life.",
     },
-  
   ];
 
   return (
@@ -49,27 +49,35 @@ const Bannar = () => {
         {slides.map((slide) => (
           <SwiperSlide key={slide.id}>
             <div
-              className="relative h-[80vh] w-full bg-center bg-cover flex items-center justify-center"
-              style={{
-                backgroundImage: `url(${slide.img})`,
-              }}
+              className="hero min-h-screen bg-cover bg-center relative"
+              style={{ backgroundImage: `url(${slide.img})` }}
             >
-              <div className="absolute inset-0 blur-sm bg-gradient-to-t from-white/20 to-black/10"></div>
+              {/* Optional overlay for blur/gradient */}
+              <div className="absolute inset-0 bg-black/20 blur-sm"></div>
 
-              <div className="relative z-10 text-center text-white/90 max-w-2xl px-6">
-                <h1 className="text-3xl md:text-5xl font-bold mb-4">
-                  {slide.text}
-                </h1>
-                <p className="text-sm md:text-lg text-gray-200 mb-6">
-                  {slide.description}
-                </p>
-                <div className="flex flex-row gap-3 justify-center ">
-                  <Link href="/products">
-                    <button className="btn btn-primary">View Products</button>
-                  </Link>
-                  <button className="btn btn-outline text-white w-fit">
-                    Contact Us
-                  </button>
+              <div className="hero-content flex-col lg:flex-row-reverse relative z-10 text-center text-white max-w-2xl px-6">
+                <Image
+                  src={slide.img}
+                  width={400}
+                  height={500}
+                  alt={slide.text}
+                  className="max-w-sm rounded-lg shadow-2xl mb-6 lg:mb-0"
+                />
+                <div>
+                  <h1 className="text-3xl md:text-5xl font-bold mb-4">
+                    {slide.text}
+                  </h1>
+                  <p className="text-sm md:text-lg text-gray-200 mb-6">
+                    {slide.description}
+                  </p>
+                  <div className="flex flex-row gap-3 justify-center lg:justify-start">
+                    <Link href="/products">
+                      <button className="btn btn-primary">View Products</button>
+                    </Link>
+                    <button className="btn btn-outline text-white w-fit">
+                      Contact Us
+                    </button>
+                  </div>
                 </div>
               </div>
             </div>
